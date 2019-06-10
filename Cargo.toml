@@ -1,0 +1,16 @@
+[package]
+name = "libc_enum"
+version = "0.1.0"
+authors = ["Francisco Giordano <frangio.1@gmail.com>"]
+edition = "2018"
+
+[features]
+sigpwr = [] # used to test conditionally compiled variants
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = { version = "0.15.35", features = ["full"] }
+quote = "0.6.12"
+libc = "0.2.58"
